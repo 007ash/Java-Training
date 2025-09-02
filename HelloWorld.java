@@ -10,20 +10,26 @@ public class HelloWorld{
         }
         return rel;
     }
+
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
         if(!scan.hasNextInt()){
             System.out.println("Invalid Input");
         }
+
         int num = scan.nextInt();
         int arr[] = new int[num];
+        
         for(int i=0; i<num; i++){
             arr[i] = scan.nextInt();
             if(arr[i] < 0){
                 System.out.println("Invalid input");
             }
         }
+
         int pos = scan.nextInt();
         System.out.println(Sorting(arr,num,pos));
+
     }
 }
