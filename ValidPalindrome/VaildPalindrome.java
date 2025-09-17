@@ -1,3 +1,4 @@
+package ValidPalindrome;
 public class VaildPalindrome {
     public static boolean isPalindrome(String s) {
         s = s.toLowerCase();
